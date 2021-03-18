@@ -1,0 +1,193 @@
+:root {
+ --hearder-image: url(./elements/header.jpg);
+}
+
+body {
+    background: black;
+    background-image: var(--hearder-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  opacity: 0.9;
+  background-color: #000000;
+  border-bottom: solid;
+  border-color: rgb(255, 255, 255);
+  
+  
+  
+}
+
+#menu-box {
+  float: left;
+  height: 40px;
+  display: flex;
+}
+
+.title {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Jura', sans-serif;;
+  font-size: 20px;
+  margin: 8px 22.5px 8px 22.5px;
+ 
+}
+
+#title {
+  text-decoration: none; 
+  width: 120px;
+  height: 24px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.menu {
+  text-decoration: none; 
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'Jura', sans-serif;
+  
+}
+
+.menu-text {
+  margin: 6px 22.5px 8px 22.5px;
+  height: 24px;
+}
+
+.menu:hover {
+  animation-name: menu-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes menu-color {
+  100% {
+    color: rgb(255, 205, 79);
+  }
+} 
+
+.title:hover {
+  animation-name: title-background;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+#title:hover {
+  animation-name: title-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title-background {
+  100% {
+    background-color: black;
+  }
+} 
+
+@keyframes title-color {
+  100% {
+    color: rgb(255, 255, 255);
+  }
+} 
+
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  font-family: 'Jura', sans-serif;
+  
+}
+
+#open-box {
+  
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#title-1 {
+  color:white;
+
+}
+
+
+.sections {
+  margin-top: 120px; 
+  display: flex;
+  justify-content: center;
+  width: 101%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.85;
+  
+  
+}
+
+#column {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-size: cover;
+  margin-top: 120px; 
+  margin-bottom: 120px; 
+  
+}
+
+.intoduction {
+  color: white;
+  font-style: bold;
+  float: left;
+}
+
+.answers {
+  color: white;
+  float: left;
+}
+
+.questions {
+  color:rgb(181, 190, 184);
+  font-style: italic;
+  float: left;
+  
+}
+
+.text-links {
+  text-decoration: none;
+  color: rgb(82, 79, 255);
+
+}
+
+.text-links:hover {
+  animation-name: link-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes link-color {
+  100% {
+    color: rgb(255, 205, 79);
+  }
+} 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+:root {
+  --background-image1: url("./main/VoyagerCover.jpg");
+  --background-image2: url("./main/Amethyst.jpg");
+  --background-image3: url("./main/crystal.png");
+}
+
+body {
+    background: black;
+ 
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  opacity: 0.95;
+  background-color: #000000;
+  border-bottom: solid;
+  border-color: rgb(255, 255, 255);
+  
+}
+
+#menu-box {
+  float: left;
+  height: 40px;
+  display: flex;
+}
+
+.title {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Jura', sans-serif;;
+  font-size: 20px;
+  margin: 8px 22.5px 8px 22.5px;
+ 
+}
+
+#title {
+  text-decoration: none; 
+  width: 120px;
+  height: 24px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.menu {
+  text-decoration: none; 
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: 'Jura', sans-serif;
+  
+}
+
+.menu-text {
+  margin: 6px 22.5px 8px 22.5px;
+  height: 24px;
+}
+
+.menu:hover {
+  animation-name: menu-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  
+}
+
+@keyframes menu-color {
+  100% {
+    color: rgb(255, 205, 79);
+  }
+} 
+
+.title:hover {
+  animation-name: title-background;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+#title:hover {
+  animation-name: title-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title-background {
+  100% {
+    background-color: black;
+  }
+} 
+
+@keyframes title-color {
+  100% {
+    color: rgb(255, 255, 255);
+  }
+} 
+
+main {
+  
+}
+
+#main-box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row; 
+  font-family: 'Jura', sans-serif;
+  justify-content: space-between;
+  /* background-color: blue; */
+  
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+
+#past-events {
+  margin-top: 300px;
+  width: 55vh;
+  color: aliceblue;
+  /* background-color: rgb(134, 71, 71); */
+}
+
+#zero-box {
+  width: 0;
+}
+
+
+
+#flyer-box {
+  
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  
+  height: 100vh;
+  background-color: blueviolet;
+  
+}
+
+.flyer {
+  height: 100vh;
+}
+
+.head-title {
+  justify-content: center;
+}
+
+.years {
+  justify-content: center;
+}
+
+
+
